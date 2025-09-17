@@ -318,7 +318,7 @@ function showMessage(message, type = 'info') {
  * Scroll Animations
  */
 function initScrollAnimations() {
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for scroll animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -327,15 +327,29 @@ function initScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animate-fade-in');
+                if (entry.target.classList.contains('scroll-animate')) {
+                    entry.target.classList.add('in-view');
+                }
+                
+                if (entry.target.classList.contains('stagger-animation')) {
+                    const children = entry.target.children;
+                    Array.from(children).forEach((child, index) => {
+                        setTimeout(() => {
+                            child.style.opacity = '1';
+                            child.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    });
+                }
+                
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
     
-    // Observe elements for animation
-    const animateElements = document.querySelectorAll('.card, .project-card, .benefit-item, .stat-item');
-    animateElements.forEach(el => observer.observe(el));
+    // Observe all scroll-animate elements
+    document.querySelectorAll('.scroll-animate').forEach(el => {
+        observer.observe(el);
+    });
 }
 
 /**

@@ -1,0 +1,473 @@
+{
+  "projects": [
+    {
+      "id": "projekt-brno",
+      "name": "Bateriové centrum Brno",
+      "location": "Brno",
+      "status": "planning",
+      "capacity": {
+        "power": 20,
+        "power_unit": "MW",
+        "energy": 40,
+        "energy_unit": "MWh"
+      },
+      "description": "Strategicky umístěné bateriové centrum v průmyslové zóně Brna s vynikajícím napojením na přenosovou soustavu.",
+      "short_description": "Projekt v průmyslové zóně Brna je zaměřen na poskytování podpůrných služeb a optimalizaci energie.",
+      "investment": {
+        "total": 450000000,
+        "currency": "CZK",
+        "min_investment": 5000000,
+        "expected_return": "8-10% p.a."
+      },
+      "timeline": {
+        "planning_start": "2024-01",
+        "construction_start": "2024-09",
+        "operation_start": "2026-01",
+        "project_lifetime": 20
+      },
+      "technology": {
+        "type": "LFP Battery",
+        "manufacturer": "CATL",
+        "cycles": 8000,
+        "efficiency": 0.92
+      },
+      "benefits": [
+        "Stabilizace elektrické sítě",
+        "Integrace OZE",
+        "Snížení emisí CO2",
+        "Lokální pracovní místa"
+      ],
+      "revenue_streams": [
+        {
+          "type": "Podpůrné služby",
+          "percentage": 40
+        },
+        {
+          "type": "Spotový trh",
+          "percentage": 35
+        },
+        {
+          "type": "PPA kontrakty",
+          "percentage": 20
+        },
+        {
+          "type": "Ostatní",
+          "percentage": 5
+        }
+      ],
+      "documents": [
+        {
+          "name": "Investiční memorandum",
+          "type": "pdf",
+          "size": "2.4 MB",
+          "url": "/documents/brno-investment-memo.pdf"
+        },
+        {
+          "name": "Technická studie",
+          "type": "pdf",
+          "size": "1.8 MB",
+          "url": "/documents/brno-technical-study.pdf"
+        }
+      ],
+      "images": {
+        "main": "/assets/images/projects/brno-main.jpg",
+        "gallery": [
+          "/assets/images/projects/brno-1.jpg",
+          "/assets/images/projects/brno-2.jpg",
+          "/assets/images/projects/brno-3.jpg"
+        ]
+      },
+      "contact_person": {
+        "name": "Ing. Jan Novák",
+        "position": "Project Manager",
+        "email": "novak@batterra.cz",
+        "phone": "+420 777 123 456"
+      }
+    },
+    {
+      "id": "projekt-ostrava",
+      "name": "Bateriové centrum Ostrava",
+      "location": "Ostrava",
+      "status": "development",
+      "capacity": {
+        "power": 50,
+        "power_unit": "MW",
+        "energy": 100,
+        "energy_unit": "MWh"
+      },
+      "description": "Největší plánované bateriové centrum v České republice s kapacitou 100 MWh, strategicky umístěné v regionu s vysokou poptávkou po regulačních službách.",
+      "short_description": "Strategicky umístěný projekt v regionu s vysokou poptávkou po regulačních službách a optimalizaci přetoků v síti.",
+      "investment": {
+        "total": 1100000000,
+        "currency": "CZK",
+        "min_investment": 10000000,
+        "expected_return": "9-12% p.a."
+      },
+      "timeline": {
+        "planning_start": "2023-06",
+        "construction_start": "2024-06",
+        "operation_start": "2025-09",
+        "project_lifetime": 20
+      },
+      "technology": {
+        "type": "LFP Battery",
+        "manufacturer": "BYD",
+        "cycles": 10000,
+        "efficiency": 0.93
+      },
+      "benefits": [
+        "Největší BESS v ČR",
+        "Podpora těžkého průmyslu",
+        "Grid stabilizace",
+        "Snížení blackout rizika"
+      ],
+      "revenue_streams": [
+        {
+          "type": "Podpůrné služby",
+          "percentage": 45
+        },
+        {
+          "type": "Spotový trh",
+          "percentage": 30
+        },
+        {
+          "type": "Bilancování",
+          "percentage": 20
+        },
+        {
+          "type": "Ostatní",
+          "percentage": 5
+        }
+      ],
+      "documents": [
+        {
+          "name": "Feasibility studie",
+          "type": "pdf",
+          "size": "3.2 MB",
+          "url": "/documents/ostrava-feasibility.pdf"
+        },
+        {
+          "name": "EIA posouzení",
+          "type": "pdf",
+          "size": "4.1 MB",
+          "url": "/documents/ostrava-eia.pdf"
+        }
+      ],
+      "images": {
+        "main": "/assets/images/projects/ostrava-main.jpg",
+        "gallery": [
+          "/assets/images/projects/ostrava-1.jpg",
+          "/assets/images/projects/ostrava-2.jpg",
+          "/assets/images/projects/ostrava-3.jpg"
+        ]
+      },
+      "contact_person": {
+        "name": "Mgr. Petra Svobodová",
+        "position": "Development Director",
+        "email": "svobodova@batterra.cz",
+        "phone": "+420 777 234 567"
+      }
+    },
+    {
+      "id": "projekt-plzen",
+      "name": "Bateriové centrum Plzeň",
+      "location": "Plzeň",
+      "status": "planning",
+      "capacity": {
+        "power": 30,
+        "power_unit": "MW",
+        "energy": 60,
+        "energy_unit": "MWh"
+      },
+      "description": "Moderní bateriové centrum v západních Čechách s důrazem na integraci obnovitelných zdrojů energie a podporu průmyslové výroby.",
+      "short_description": "Moderní bateriové centrum s nejnovějšími technologiemi pro maximální efektivitu a dlouhodobou stabilitu provozu.",
+      "investment": {
+        "total": 680000000,
+        "currency": "CZK",
+        "min_investment": 5000000,
+        "expected_return": "8-11% p.a."
+      },
+      "timeline": {
+        "planning_start": "2024-03",
+        "construction_start": "2025-01",
+        "operation_start": "2026-06",
+        "project_lifetime": 20
+      },
+      "technology": {
+        "type": "LFP Battery",
+        "manufacturer": "Samsung SDI",
+        "cycles": 8500,
+        "efficiency": 0.91
+      },
+      "benefits": [
+        "Integrace větrných parků",
+        "Podpora lokální sítě",
+        "Flexibilní provoz",
+        "Rychlá návratnost"
+      ],
+      "revenue_streams": [
+        {
+          "type": "PPA kontrakty",
+          "percentage": 50
+        },
+        {
+          "type": "Podpůrné služby",
+          "percentage": 30
+        },
+        {
+          "type": "Spotový trh",
+          "percentage": 15
+        },
+        {
+          "type": "Ostatní",
+          "percentage": 5
+        }
+      ],
+      "documents": [
+        {
+          "name": "Projektová dokumentace",
+          "type": "pdf",
+          "size": "2.8 MB",
+          "url": "/documents/plzen-project.pdf"
+        }
+      ],
+      "images": {
+        "main": "/assets/images/projects/plzen-main.jpg",
+        "gallery": [
+          "/assets/images/projects/plzen-1.jpg",
+          "/assets/images/projects/plzen-2.jpg"
+        ]
+      },
+      "contact_person": {
+        "name": "Ing. Tomáš Dvořák",
+        "position": "Technical Director",
+        "email": "dvorak@batterra.cz",
+        "phone": "+420 777 345 678"
+      }
+    },
+    {
+      "id": "projekt-ceske-budejovice",
+      "name": "Bateriové centrum České Budějovice",
+      "location": "České Budějovice",
+      "status": "planning",
+      "capacity": {
+        "power": 25,
+        "power_unit": "MW",
+        "energy": 50,
+        "energy_unit": "MWh"
+      },
+      "description": "Bateriové centrum v jižních Čechách zaměřené na podporu stability regionální distribuční sítě a integraci solárních elektráren.",
+      "short_description": "Projekt zaměřený na podporu regionální sítě a integraci solární energie v jižních Čechách.",
+      "investment": {
+        "total": 560000000,
+        "currency": "CZK",
+        "min_investment": 5000000,
+        "expected_return": "7-10% p.a."
+      },
+      "timeline": {
+        "planning_start": "2024-06",
+        "construction_start": "2025-03",
+        "operation_start": "2026-09",
+        "project_lifetime": 20
+      },
+      "technology": {
+        "type": "LFP Battery",
+        "manufacturer": "EVE Energy",
+        "cycles": 7500,
+        "efficiency": 0.90
+      },
+      "benefits": [
+        "Integrace solárních parků",
+        "Stabilizace regionální sítě",
+        "Podpora místní ekonomiky",
+        "Zelená energie"
+      ],
+      "revenue_streams": [
+        {
+          "type": "Podpůrné služby",
+          "percentage": 35
+        },
+        {
+          "type": "PPA kontrakty",
+          "percentage": 35
+        },
+        {
+          "type": "Spotový trh",
+          "percentage": 25
+        },
+        {
+          "type": "Ostatní",
+          "percentage": 5
+        }
+      ],
+      "documents": [],
+      "images": {
+        "main": "/assets/images/projects/cb-main.jpg",
+        "gallery": []
+      },
+      "contact_person": {
+        "name": "Ing. Eva Černá",
+        "position": "Regional Manager",
+        "email": "cerna@batterra.cz",
+        "phone": "+420 777 456 789"
+      }
+    },
+    {
+      "id": "projekt-pardubice",
+      "name": "Bateriové centrum Pardubice",
+      "location": "Pardubice",
+      "status": "feasibility",
+      "capacity": {
+        "power": 15,
+        "power_unit": "MW",
+        "energy": 30,
+        "energy_unit": "MWh"
+      },
+      "description": "Kompaktní bateriové centrum ve východních Čechách s důrazem na poskytování rychlých regulačních služeb.",
+      "short_description": "Kompaktní projekt s důrazem na rychlé regulační služby a vysokou flexibilitu.",
+      "investment": {
+        "total": 340000000,
+        "currency": "CZK",
+        "min_investment": 5000000,
+        "expected_return": "7-9% p.a."
+      },
+      "timeline": {
+        "planning_start": "2024-09",
+        "construction_start": "2025-06",
+        "operation_start": "2027-01",
+        "project_lifetime": 20
+      },
+      "technology": {
+        "type": "LFP Battery",
+        "manufacturer": "CALB",
+        "cycles": 7000,
+        "efficiency": 0.89
+      },
+      "benefits": [
+        "Rychlé regulační služby",
+        "Kompaktní design",
+        "Nízké provozní náklady",
+        "Flexibilní provoz"
+      ],
+      "revenue_streams": [
+        {
+          "type": "Podpůrné služby",
+          "percentage": 60
+        },
+        {
+          "type": "Spotový trh",
+          "percentage": 30
+        },
+        {
+          "type": "Ostatní",
+          "percentage": 10
+        }
+      ],
+      "documents": [],
+      "images": {
+        "main": "/assets/images/projects/pardubice-main.jpg",
+        "gallery": []
+      },
+      "contact_person": {
+        "name": "Ing. Pavel Krejčí",
+        "position": "Project Coordinator",
+        "email": "krejci@batterra.cz",
+        "phone": "+420 777 567 890"
+      }
+    },
+    {
+      "id": "projekt-liberec",
+      "name": "Bateriové centrum Liberec",
+      "location": "Liberec",
+      "status": "feasibility",
+      "capacity": {
+        "power": 20,
+        "power_unit": "MW",
+        "energy": 40,
+        "energy_unit": "MWh"
+      },
+      "description": "Bateriové centrum v severních Čechách zaměřené na podporu přeshraniční spolupráce a stabilizaci přetoků energie.",
+      "short_description": "Projekt zaměřený na přeshraniční spolupráci a stabilizaci energetických přetoků.",
+      "investment": {
+        "total": 450000000,
+        "currency": "CZK",
+        "min_investment": 5000000,
+        "expected_return": "8-10% p.a."
+      },
+      "timeline": {
+        "planning_start": "2024-12",
+        "construction_start": "2025-09",
+        "operation_start": "2027-03",
+        "project_lifetime": 20
+      },
+      "technology": {
+        "type": "LFP Battery",
+        "manufacturer": "Gotion",
+        "cycles": 7500,
+        "efficiency": 0.90
+      },
+      "benefits": [
+        "Přeshraniční spolupráce",
+        "Stabilizace přetoků",
+        "Podpora exportu energie",
+        "Regionální rozvoj"
+      ],
+      "revenue_streams": [
+        {
+          "type": "Podpůrné služby",
+          "percentage": 40
+        },
+        {
+          "type": "Cross-border trading",
+          "percentage": 35
+        },
+        {
+          "type": "Spotový trh",
+          "percentage": 20
+        },
+        {
+          "type": "Ostatní",
+          "percentage": 5
+        }
+      ],
+      "documents": [],
+      "images": {
+        "main": "/assets/images/projects/liberec-main.jpg",
+        "gallery": []
+      },
+      "contact_person": {
+        "name": "Ing. Martin Procházka",
+        "position": "Business Development",
+        "email": "prochazka@batterra.cz",
+        "phone": "+420 777 678 901"
+      }
+    }
+  ],
+  "project_statuses": {
+    "feasibility": {
+      "name": "Studie proveditelnosti",
+      "color": "#FFA500",
+      "icon": "fa-compass-drafting"
+    },
+    "planning": {
+      "name": "Plánování",
+      "color": "#2196F3",
+      "icon": "fa-pencil-ruler"
+    },
+    "development": {
+      "name": "Vývoj",
+      "color": "#4CAF50",
+      "icon": "fa-hammer"
+    },
+    "construction": {
+      "name": "Výstavba",
+      "color": "#FF9800",
+      "icon": "fa-building"
+    },
+    "operation": {
+      "name": "V provozu",
+      "color": "#4CAF50",
+      "icon": "fa-bolt"
+    }
+  }
+}

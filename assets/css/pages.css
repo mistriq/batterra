@@ -131,6 +131,36 @@
     margin-bottom: var(--spacing-3xl);
 }
 
+/* Page Hero Sections */
+.page-hero,
+.investment-hero,
+.projects-hero,
+.transparency-hero,
+.news-hero {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 120px 0 80px;
+    color: white;
+    text-align: center;
+}
+
+.page-hero h1,
+.investment-hero h1,
+.projects-hero h1,
+.transparency-hero h1,
+.news-hero h1 {
+    color: white !important;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
 /* Investment Model Section */
 .investment-model-preview {
     padding: var(--spacing-4xl) 0;
@@ -215,7 +245,7 @@
 .meta-value {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
-    color: var(--color-dark);
+    color: var(--color-white);
 }
 
 .project-description {

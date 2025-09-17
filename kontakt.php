@@ -24,7 +24,7 @@ include 'includes/header.php';
                 <h3>Přímé kontakty</h3>
                 
                 <div class="contact-method">
-                    <div class="contact-icon">📧</div>
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                     <div class="contact-details">
                         <div class="contact-label">E-mail</div>
                         <a href="mailto:<?php echo SITE_EMAIL; ?>"><?php echo SITE_EMAIL; ?></a>
@@ -32,7 +32,7 @@ include 'includes/header.php';
                 </div>
                 
                 <div class="contact-method">
-                    <div class="contact-icon">📞</div>
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
                     <div class="contact-details">
                         <div class="contact-label">Telefon</div>
                         <a href="tel:<?php echo str_replace(' ', '', SITE_PHONE); ?>"><?php echo SITE_PHONE; ?></a>
@@ -40,7 +40,7 @@ include 'includes/header.php';
                 </div>
                 
                 <div class="contact-method">
-                    <div class="contact-icon">📍</div>
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="contact-details">
                         <div class="contact-label">Adresa</div>
                         <div><?php echo SITE_ADDRESS; ?></div>
@@ -49,7 +49,7 @@ include 'includes/header.php';
                 
                 <h4>Máte zájem o konkrétní projekt?</h4>
                 <p>Domluvte si schůzku s naším týmem.</p>
-                <a href="#contact-form" class="btn btn-primary">Domlubit schůzku</a>
+                <a href="#contact-form" class="btn btn-primary text-white" style="color: white;">Domluvit schůzku</a>
             </div>
             
             <div class="contact-form">
@@ -82,7 +82,7 @@ include 'includes/header.php';
                             <input type="checkbox" name="privacy_consent" required>
                             <span class="text-sm text-gray">
                                 Souhlasím se zpracováním osobních údajů dle 
-                                <a href="/privacy-policy.php" class="text-primary">zásad ochrany osobních údajů</a> *
+                                <a href="./privacy-policy.php" class="text-primary">zásad ochrany osobních údajů</a> *
                             </span>
                         </label>
                     </div>
@@ -109,8 +109,8 @@ include 'includes/header.php';
     <div class="container">
         <h2>Máte zájem o konkrétní projekt?</h2>
         <p>Domluvte si schůzku s naším týmem.</p>
-        <a href="#contact-form" class="btn btn-secondary btn-lg">
-            Domlubit schůzku
+        <a href="#contact-form" class="btn btn-secondary btn-lg text-white">
+            Domluvit schůzku
         </a>
     </div>
 </section>

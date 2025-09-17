@@ -11,13 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/components.css">
-    <link rel="stylesheet" href="/assets/css/pages.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/pages.css">
+    <link rel="stylesheet" href="./assets/css/project-pages.css">
+    <link rel="stylesheet" href="./assets/css/investment.css">
+    <link rel="stylesheet" href="./assets/css/news.css">
+    <link rel="stylesheet" href="./assets/css/forms.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     
     <!-- Open Graph Tags -->
     <meta property="og:title" content="<?php echo isset($page_title) ? $page_title : SITE_NAME; ?>">
@@ -34,7 +42,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="/" aria-label="Batterra - Domovská stránka">
+                    <a href="./" aria-label="Batterra - Domovská stránka">
                         <span class="logo-text">BATTERRA</span>
                     </a>
                 </div>
@@ -42,7 +50,7 @@
                 <?php include 'nav.php'; ?>
                 
                 <div class="header-cta">
-                    <a href="/kontakt.php" class="btn btn-primary">Domluvit schůzku</a>
+                    <a href="./kontakt.php" class="btn btn-primary">Domluvit schůzku</a>
                 </div>
                 
                 <button class="mobile-menu-toggle" aria-label="Otevřít menu">

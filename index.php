@@ -16,10 +16,10 @@ include 'includes/header.php';
                 Naším cílem je poskytnout investorům stabilní výnosy při 100% transparentnosti.
             </p>
             <div class="hero-cta">
-                <a href="/investicni-model.php" class="btn btn-primary btn-lg">
+                <a href="./investicni-model.php" class="btn btn-primary btn-lg">
                     Zjistit více o investici
                 </a>
-                <a href="/kontakt.php" class="btn btn-secondary btn-lg">
+                <a href="./kontakt.php" class="btn btn-secondary btn-lg">
                     Domluvit schůzku
                 </a>
             </div>
@@ -40,7 +40,7 @@ include 'includes/header.php';
                     Projektujeme a realizujemy bateriová centra s důrazem na vysokou kvalitu, bezpečnost a dlouhodobou 
                     udržitelnost. Každý náš projekt prochází důkladnou analýzou a je optimalizován pro maximální efektivitu.
                 </p>
-                <a href="/o-spolecnosti.php" class="btn btn-outline">Více o nás</a>
+                <a href="./o-spolecnosti.php" class="btn btn-outline">Více o nás</a>
             </div>
             <div class="about-stats">
                 <div class="stat-item">
@@ -74,49 +74,38 @@ include 'includes/header.php';
             </p>
         </div>
         
-        <div class="projects-grid">
-            <div class="card project-card">
+        <div class="projects-grid scroll-animate stagger-animation">
+            <?php 
+            $featured_projects = array_slice(get_all_projects(), 0, 3);
+            foreach ($featured_projects as $project): 
+            ?>
+            <div class="card project-card hover-lift">
+                <div class="project-status">
+                    <i class="fas <?php echo $project['status_details']['icon'] ?? 'fa-circle'; ?>" 
+                       style="color: <?php echo $project['status_details']['color'] ?? '#999'; ?>"></i>
+                    <span><?php echo $project['status_details']['name'] ?? $project['status']; ?></span>
+                </div>
                 <div class="card-body">
-                    <h3>Projekt A</h3>
-                    <div class="project-location">Brno</div>
-                    <div class="project-capacity">20 MW</div>
-                    <p>
-                        Projekt Průhonice je jeden z prvních bateriových center v České republice. 
-                        Je zaměřen na poskytování služeb avotrimizace energii.
-                    </p>
-                    <a href="/projekt.php?id=projekt-a" class="btn btn-outline">Detail projektu</a>
+                    <h3><?php echo htmlspecialchars($project['name']); ?></h3>
+                    <div class="project-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <?php echo htmlspecialchars($project['location']); ?>
+                    </div>
+                    <div class="project-capacity">
+                        <i class="fas fa-battery-three-quarters"></i>
+                        <?php echo $project['capacity']['power']; ?> <?php echo $project['capacity']['power_unit']; ?>
+                    </div>
+                    <p><?php echo htmlspecialchars($project['short_description']); ?></p>
+                    <a href="./projekt.php?id=<?php echo urlencode($project['id']); ?>" class="btn btn-outline">
+                        <i class="fas fa-arrow-right"></i>&nbsp;Detail projektu
+                    </a>
                 </div>
             </div>
-            
-            <div class="card project-card">
-                <div class="card-body">
-                    <h3>Projekt B</h3>
-                    <div class="project-location">Ostrova</div>
-                    <div class="project-capacity">50 MWh</div>
-                    <p>
-                        Strategicky umístěný projekt v regionu s vysokou poptávkou 
-                        po regulačních službách a optimalizaci přetoků v síti.
-                    </p>
-                    <a href="/projekt.php?id=projekt-b" class="btn btn-outline">Detail projektu</a>
-                </div>
-            </div>
-            
-            <div class="card project-card">
-                <div class="card-body">
-                    <h3>Projekt C</h3>
-                    <div class="project-location">Germanyo</div>
-                    <div class="project-capacity">30 MW</div>
-                    <p>
-                        Moderní bateriové centrum s nejnovějšími technologiemi 
-                        pro maximální efektivitu a dlouhodobou stabilitu provozu.
-                    </p>
-                    <a href="/projekt.php?id=projekt-c" class="btn btn-outline">Detail projektu</a>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
         
         <div class="text-center">
-            <a href="/projekty.php" class="btn btn-primary btn-lg">Všechny projekty</a>
+            <a href="./projekty.php" class="btn btn-primary btn-lg">Všechny projekty</a>
         </div>
     </div>
 </section>
@@ -130,33 +119,41 @@ include 'includes/header.php';
             </p>
         </div>
         
-        <div class="investment-flow">
-            <div class="investment-step active">
-                <div class="investment-step-icon">💰</div>
+        <div class="investment-flow scroll-animate">
+            <div class="investment-step scroll-animate">
+                <div class="investment-step-icon">
+                    <i class="fas fa-coins"></i>
+                </div>
                 <h3 class="investment-step-title">Investice</h3>
                 <p class="investment-step-description">
                     Vstupní kapitál, harmonogram čerpání
                 </p>
             </div>
-            <div class="investment-arrow"></div>
-            <div class="investment-step">
-                <div class="investment-step-icon">⚡</div>
+                <i class="fas fa-arrow-right"></i>
+            <div class="investment-step scroll-animate">
+                <div class="investment-step-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
                 <h3 class="investment-step-title">Provoz</h3>
                 <p class="investment-step-description">
                     Optimalizace příjmů, provozní řízení, údržba
                 </p>
             </div>
-            <div class="investment-arrow"></div>
-            <div class="investment-step">
-                <div class="investment-step-icon">📈</div>
+            <i class="fas fa-arrow-right"></i>
+            <div class="investment-step scroll-animate">
+                <div class="investment-step-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
                 <h3 class="investment-step-title">Výnosy</h3>
                 <p class="investment-step-description">
                     Tržby ze služeb, síté a obchodování s elektřinou
                 </p>
             </div>
-            <div class="investment-arrow"></div>
-            <div class="investment-step">
-                <div class="investment-step-icon">🎯</div>
+            <i class="fas fa-arrow-right"></i>
+            <div class="investment-step scroll-animate">
+                <div class="investment-step-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
                 <h3 class="investment-step-title">Exit</h3>
                 <p class="investment-step-description">
                     Prodej projektu, refinancování, odkup
@@ -164,36 +161,45 @@ include 'includes/header.php';
             </div>
         </div>
         
-        <div class="investment-benefits">
+        <div class="investment-benefits scroll-animate stagger-animation">
             <div class="benefit-item">
-                <div class="benefit-icon">⏱️</div>
+                <div class="benefit-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
                 <h3 class="benefit-title">Stabilita</h3>
                 <p class="benefit-description">
-                    Dlouhodobý projekt s reálnými výnosy
+                    Dlouhodobé projekty s předvídatelnými výnosy
                 </p>
             </div>
             <div class="benefit-item">
-                <div class="benefit-icon">🔧</div>
+                <div class="benefit-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
                 <h3 class="benefit-title">Provoz</h3>
                 <p class="benefit-description">
-                    Optimalizace příjmů a účinnosti
+                    Profesionální správa a optimalizace výnosů
                 </p>
             </div>
             <div class="benefit-item">
-                <div class="benefit-icon">💎</div>
+                <div class="benefit-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
                 <h3 class="benefit-title">Výnosy</h3>
                 <p class="benefit-description">
-                    Výnosy, nákrazy cash flow
+                    Diverzifikované příjmy a pravidelné výplaty
                 </p>
             </div>
         </div>
         
+        <br>
+
         <div class="text-center">
-            <a href="/investicni-model.php" class="btn btn-primary btn-lg">
+            <a href="./investicni-model.php" class="btn btn-primary btn-lg">
                 Chci vědět, jak se mohu zapojit
             </a>
         </div>
     </div>
 </section>
+
 
 <?php include 'includes/footer.php'; ?>

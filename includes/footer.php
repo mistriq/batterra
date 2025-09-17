@@ -5,7 +5,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <span class="logo-text">BATTERRA</span>
+                        <span class="logo-text-footer">BATTERRA</span>
                         <p class="footer-tagline">
                             Investiční společnost zaměřená na výstavbu a provoz moderních bateriových center.
                         </p>
@@ -15,20 +15,20 @@
                 <div class="footer-section">
                     <h3 class="footer-title">Navigace</h3>
                     <ul class="footer-links">
-                        <li><a href="/o-spolecnosti.php">O společnosti</a></li>
-                        <li><a href="/projekty.php">Projekty</a></li>
-                        <li><a href="/investicni-model.php">Investiční model</a></li>
-                        <li><a href="/transparentnost.php">Transparentnost</a></li>
+                        <li><a href="./o-spolecnosti.php">O společnosti</a></li>
+                        <li><a href="./projekty.php">Projekty</a></li>
+                        <li><a href="./investicni-model.php">Investiční model</a></li>
+                        <li><a href="./transparentnost.php">Transparentnost</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h3 class="footer-title">Informace</h3>
                     <ul class="footer-links">
-                        <li><a href="/aktuality.php">Aktuality</a></li>
-                        <li><a href="/kontakt.php">Kontakt</a></li>
-                        <li><a href="/privacy-policy.php">Ochrana osobních údajů</a></li>
-                        <li><a href="/terms.php">Obchodní podmínky</a></li>
+                        <li><a href="./aktuality.php">Aktuality</a></li>
+                        <li><a href="./kontakt.php">Kontakt</a></li>
+                        <li><a href="./privacy-policy.php">Ochrana osobních údajů</a></li>
+                        <li><a href="./terms.php">Obchodní podmínky</a></li>
                     </ul>
                 </div>
                 
@@ -47,7 +47,7 @@
                     </div>
                     
                     <div class="footer-cta">
-                        <a href="/kontakt.php" class="btn btn-secondary">Domluvit schůzku</a>
+                        <a href="./kontakt.php" class="btn btn-secondary">Domluvit schůzku</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,8 @@
     </footer>
     
     <!-- Scripts -->
-    <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/charts.js"></script>
     <?php if (isset($additional_scripts)) echo $additional_scripts; ?>
 </body>
 </html>
